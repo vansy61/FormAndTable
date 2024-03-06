@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style>
+    * {
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #d5feff;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    h1 {
+      background-color: #ff4c00;
+      color: white;
+      text-align: center;
+      padding: 5px 0;
+    }
+
+    label {
+      color: #132eaf;
+      display: inline-block;
+    }
+
+    input[type="text"] {
+      width: 200px;
+      border: 1px solid gray;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .form-wrapper {
+      background-color: white;
+      padding: 20px;
+      border-radius: 20px;
+      width: 500px;
+    }
+
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .item>label {
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .item.interest {
+      display: flex;
+    }
+
+    .item.interest>label {
+      min-width: 100px;
+    }
+
+    .interest-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .interest-list>label {
+      min-width: 120px;
+      color: #ff4c00;
+    }
+
+    .action {
+      margin-left: 110px;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="form-wrapper">
+      <form action="/" method="POST">
+        <h1>Sở Thích Của Bạn</h1>
+        <div class="item">
+          <label>Họ Và Tên</label>
+          <input type="text">
+        </div>
+        <div class="item">
+          <label>Email</label>
+          <input type="text">
+        </div>
+        <div class="item interest">
+          <label>Sở Thích</label>
+          <div class="interest-list">
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+            <label>
+              <input type="checkbox" name="" id="">
+              Thể thao
+            </label>
+          </div>
+        </div>
+        <div class="item action">
+          <button>Gửi thông tin</button>
+          <button type="reset">Nhập lại thông tin</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

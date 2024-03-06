@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      display: block;
+    }
+    select {
+      width: 200px;
+    }
+    h4 {
+      margin: 0 0 5px;
+    }
+    form >div {
+      margin-bottom: 20px;
+    }
+    span {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Form</h1>
+  <form action="/" method="POST">
+    <div>
+      <!-- menu -->
+      <h4>What would you like to buy?</h4>
+      <select name="item" id="menu">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+      </select>
+    </div>
+    
+    <!-- quantity -->
+    <div>
+      <h4>How many would you like to order?</h4>
+      <label><input type="radio" name="quantity"> 1 - $10</label>
+      <label><input type="radio" name="quantity"> 2 - $20</label>
+      <label><input type="radio" name="quantity"> 3 - $25</label>
+    </div>
+
+    <!-- name -->
+    <div>
+      <h4>Name <span>*</span></h4>
+      <div>
+        <input type="text" name="first_name" placeholder="First Name">
+        <input type="text" name="last_name" placeholder="Last Name">
+      </div>
+    </div>
+
+    <!-- email -->
+    <div>
+      <h4>Email</h4>
+      <div>
+        <input type="email" name="email">
+      </div>
+    </div>
+
+    <!-- phone -->
+    <div>
+      <h4>Phone</h4>
+      <div>
+        <input type="text" name="phone">
+      </div>
+    </div>
+
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>  
+</body>
+</html>
